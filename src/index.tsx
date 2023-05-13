@@ -24,7 +24,9 @@ export { MD2Colors };
 export { Avatar, List, Drawer };
 
 export * from './components/FAB/AnimatedFAB';
-
+import {
+  AirbnbRatingDefault as AirbnbRating,
+} from './AirbnbRating';
 export { default as Badge } from './components/Badge';
 export { default as ActivityIndicator } from './components/ActivityIndicator';
 export { default as Banner } from './components/Banner';

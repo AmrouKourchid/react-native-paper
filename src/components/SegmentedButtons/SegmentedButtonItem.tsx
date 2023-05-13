@@ -5,6 +5,7 @@ import {
   StyleProp,
   StyleSheet,
   TextStyle,
+  ScrollView,
   View,
   ViewStyle,
 } from 'react-native';
@@ -195,7 +196,7 @@ const SegmentedButtonItem = ({
         style={rippleStyle}
         theme={theme}
       >
-        <View style={[styles.content, { paddingVertical }]}>
+        <ScrollView style={[styles.content, { paddingVertical }]}>
           {showCheckedIcon ? (
             <Animated.View
               testID={`${testID}-check-icon`}
@@ -217,7 +218,7 @@ const SegmentedButtonItem = ({
           >
             {label}
           </Text>
-        </View>
+        </ScrollView>
       </TouchableRipple>
     </View>
   );
